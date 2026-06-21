@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "git-root-dir",
+        "color": "brightBlue"
+      },
+      {
+        "id": "2",
+        "type": "separator"
+      },
+      {
+        "id": "5",
+        "type": "git-branch",
+        "color": "brightGreen"
+      },
+      {
+        "id": "4",
+        "type": "separator"
+      },
+      {
+        "id": "3",
+        "type": "context-length",
+        "color": "brightYellow"
+      },
+      {
+        "id": "6",
+        "type": "separator"
+      },
+      {
+        "id": "7",
+        "type": "git-changes",
+        "color": "brightCyan"
+      }
+    ],
+    [
+      {
+        "id": "9e3b8d5c-1e5c-4af0-a9ca-551a5724f322",
+        "type": "custom-command",
+        "commandPath": "node ~/.claude/tools/cc-model.js",
+        "timeout": 1000,
+        "color": "brightBlue"
+      },
+      {
+        "id": "effort-sep-1",
+        "type": "separator"
+      },
+      {
+        "id": "effort-1",
+        "type": "thinking-effort",
+        "color": "brightMagenta"
+      },
+      {
+        "id": "3263bb2f-fff3-48f6-b24e-2aba3a1114d1",
+        "type": "separator"
+      },
+      {
+        "id": "3a398877-6481-4adb-a278-4c28d13401ab",
+        "type": "session-usage",
+        "color": "brightWhite"
+      },
+      {
+        "id": "b8b0ae5e-b506-4fff-81bf-602bbbb3e207",
+        "type": "separator"
+      },
+      {
+        "id": "28ba3549-6716-4aef-aafc-f7465041d474",
+        "type": "reset-timer",
+        "color": "brightWhite"
+      }
+    ],
+    []
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "minimalistMode": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
+  }
+}

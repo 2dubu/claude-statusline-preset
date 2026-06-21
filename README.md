@@ -16,6 +16,23 @@ git clone https://github.com/2dubu/claude-statusline-preset.git ~/claude-statusl
 
 > Clone to a stable path — the repo is the symlink source, so moving it later breaks the links (just re-run `setup.sh` from the new location).
 
+### Or just hand it to an AI agent
+
+Paste this into Claude Code (or any coding agent) and let it do the setup:
+
+```text
+Set up my Claude Code status bar from this preset and verify it:
+
+  git clone https://github.com/2dubu/claude-statusline-preset.git ~/claude-statusline-preset
+  ~/claude-statusline-preset/setup.sh
+
+setup.sh is idempotent and backs up anything it replaces. It installs ccstatusline,
+symlinks the config into ~/.config and ~/.claude/tools, and merges only the `statusLine`
+key into ~/.claude/settings.json (other settings are preserved). After it runs, confirm
+the status bar shows the model with a `(1M)` tag and the thinking-effort widget, and tell
+me if Claude Code needs a refresh to pick it up.
+```
+
 ### What is setup.sh?
 
 Idempotent (safe to re-run) and backs up anything it replaces:

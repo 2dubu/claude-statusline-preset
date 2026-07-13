@@ -48,8 +48,15 @@
         "type": "separator"
       },
       {
+        "id": "effort-label",
+        "type": "custom-text",
+        "customText": "Effort: ",
+        "color": "brightMagenta"
+      },
+      {
         "id": "effort-1",
         "type": "thinking-effort",
+        "rawValue": true,
         "color": "brightMagenta"
       },
       {

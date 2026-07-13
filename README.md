@@ -4,7 +4,7 @@ Personal Claude Code status bar ([ccstatusline](https://github.com/sirmalloc/ccs
 
 ```
 repository-name | ⎇ feat/… | Ctx: 255.8k | (+152,-8)
-Opus 4.8 (1M) | Thinking: xhigh | Session: 15.0% | Reset: 21m
+Opus 4.8 (1M) | Effort: xhigh | Session: 15.0% | Reset: 21m
 ```
 
 ## Install
@@ -29,7 +29,7 @@ Set up my Claude Code status bar from this preset and verify it:
 setup.sh is idempotent and backs up anything it replaces. It installs ccstatusline,
 symlinks the config into ~/.config and ~/.claude/tools, and merges only the `statusLine`
 key into ~/.claude/settings.json (other settings are preserved). After it runs, confirm
-the status bar shows the model with a `(1M)` tag and the thinking-effort widget, and tell
+the status bar shows the model with a `(1M)` tag and the `Effort:` indicator, and tell
 me if Claude Code needs a refresh to pick it up.
 ```
 
@@ -51,7 +51,7 @@ Idempotent (safe to re-run) and backs up anything it replaces:
 | `home/.claude/tools/cc-model.js` | custom-command helper — model name, plus a ` (1M)` tag on 1M-context sessions. Reads the status JSON from stdin |
 | `setup.sh` | One-shot installer |
 
-- **effort** — built-in `thinking-effort` widget → `Thinking: xhigh` (ultracode is officially reported as `xhigh`). Reflects `/effort` changes live.
+- **effort** — a `custom-text` label plus the built-in `thinking-effort` widget in raw-value mode → `Effort: xhigh` (the widget's own label is a hardcoded `Thinking:`, so the preset renders its own; ultracode is officially reported as `xhigh`). Reflects `/effort` changes live.
 - **1M** — the built-in Model widget strips the trailing `(...)` from `display_name`, dropping `(1M context)`. `cc-model.js` replaces it to render `Opus 4.8 (1M)`. Non-1M sessions show just the model name.
 
 ## Customize
